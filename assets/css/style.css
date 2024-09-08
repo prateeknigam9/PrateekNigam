@@ -1,0 +1,291 @@
+/* Navbar styles */
+.navbar {
+    border-bottom: 1px solid #615e5e;
+    /* Draws a line below the navbar */
+}
+
+/* Navbar brand left-aligned */
+.navbar-brand {
+    font-family: "Macondo", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: xx-large;
+    line-height: 100px;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+    /* Makes the text bold */
+    margin-right: auto;
+    /* Keeps the brand aligned to the left */
+    text-align: left;
+    /* Ensures text is left-aligned */
+    color: #615e5e;
+}
+
+/* Center-aligns the navigation links */
+.navbar-nav {
+    margin: 0 auto;
+    /* Centers the nav links */
+    display: flex;
+    /* Makes sure nav links are in a flexbox */
+    justify-content: center;
+    /* Centers nav items within the container */
+    width: 100%;
+    /* Allows proper centering */
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Removes margin around nav items */
+.nav-item {
+    margin: 0 15px;
+    /* Adds space between nav items */
+}
+
+/* Change nav-link color on hover */
+.nav-link:hover {
+    color: rgb(68, 201, 6);
+    /* Changes the text color to red on hover */
+    text-decoration: none;
+    /* Removes any underline that may appear */
+}
+
+/* ABOUT PAGE */
+.profile-container {
+    display: flex;
+    flex-direction: row;
+    /* Default to row layout for larger screens */
+    align-items: flex-start;
+    flex-wrap: wrap;
+    /* Allow wrapping on smaller screens */
+    padding: 10px;
+    /* Add padding to container */
+}
+
+.profile-picture {
+    width: 300px;
+    /* Default width */
+    height: 300px;
+    /* Default height */
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+    margin-right: 20px;
+    /* Space between image and text */
+}
+
+.profile-content {
+    flex: 1;
+    /* Take up remaining space */
+    max-width: calc(100% - 320px);
+    /* Adjust based on image width */
+    padding-top: 10px;
+    text-align: left;
+}
+
+.profile-content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.profile-content a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.profile-content a:hover {
+    text-decoration: underline;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+        /* Stack image and text vertically */
+        align-items: center;
+        /* Center align on smaller screens */
+    }
+
+    .profile-picture {
+        width: 200px;
+        /* Adjust image size for smaller screens */
+        height: 200px;
+        margin: 0 0 20px 0;
+        /* Remove right margin, add bottom margin */
+    }
+
+    .profile-content {
+        max-width: 100%;
+        /* Ensure content takes full width */
+        margin-left: 0;
+        /* Remove left margin */
+        text-align: left;
+        /* Center align text on smaller screens */
+    }
+}
+
+.compact {
+    margin: 0;
+}
+
+/* CV */
+#pdf_link {
+    display: block; /* Make the link a block-level element */
+    margin: 0 auto; /* Center it horizontally */
+    text-align: center; /* Optional: Center the text within the link */
+    font-size: 16px; /* Optional: Adjust font size */
+    text-decoration: none; /* Optional: Remove underline from the link */
+}
+
+.headers {
+    margin-top: 40px;
+    margin-left: 10px;
+    font-family: "Delius Unicase", cursive;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+
+.contents {
+    margin: 1px;
+    margin-left: 20px;
+    
+}
+
+.exception {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Distribute space between title and dates */
+     margin-bottom: 10px; /* Space below each experience item */
+}
+
+.job-title {
+    margin-top: 10px;
+    font-size: 21px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    letter-spacing: 0.05em;
+    color: #1E3B4D;
+}
+
+
+.job-dates {
+    display: block;
+    text-align: right;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 3px;
+    letter-spacing: 0.1em;
+    color: #106092;
+
+}
+
+.Job-desc {
+    margin-top: 2px;
+    margin: 0;
+}
+
+.degree-title{    
+    margin-top: 10px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 21px;
+    letter-spacing: 0.05em;
+    color: #1E3B4D;
+}
+
+.institution{   
+    font-family: 'Yanone Kaffeesatz', sans-serif; 
+    display: block;
+    text-align: right;
+    color: #106092;
+}
+
+.years{    
+    display: block;
+    text-align: right;
+
+}
+
+.Job-desc{
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+
+
+.achievements-list {
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Projects */
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    margin-top: 40px;
+    margin-left: 10px;
+    font-family: "Delius Unicase", cursive;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.project img {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.project .text {
+    flex: 1;
+}
+
+.project h2 {
+    font-size: 1.5em;
+    color: #222;
+    margin: 0 0 10px;
+}
+
+.project p {
+    font-size: 1em;
+    color: #555;
+    margin: 0;
+}
+
+.project .link {
+    font-size: 1em;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.project .link:hover {
+    text-decoration: underline;
+}
