@@ -150,7 +150,7 @@
 
 .contents {
     margin: 1px;
-    margin-left: 20px;
+    margin-left: 10px;
     
 }
 
@@ -171,7 +171,7 @@
 
 .job-dates {
     display: block;
-    text-align: right;
+    text-align: Left;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-weight: 500;
     margin-top: 0;
@@ -183,7 +183,7 @@
 
 .Job-desc {
     margin-top: 2px;
-    margin: 0;
+    /* margin: 0; */
 }
 
 .degree-title{    
