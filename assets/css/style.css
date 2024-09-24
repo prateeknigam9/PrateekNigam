@@ -53,7 +53,7 @@ body{
 
 /* Change nav-link color on hover */
 .nav-link:hover {
-    color: rgb(233, 164, 16);
+    color: #c7600c;
     /* Changes the text color to red on hover */
     text-decoration: none;
     /* Removes any underline that may appear */
