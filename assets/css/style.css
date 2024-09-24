@@ -1,8 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+body{
+    background: #f7f1f1;
+    z-index: -1;
+    transition: .5s;
+}
+
 /* Navbar styles */
 .navbar {
     border-bottom: 1px solid #615e5e;
-    /* Draws a line below the navbar */
 }
+
 
 /* Navbar brand left-aligned */
 .navbar-brand {
@@ -33,7 +41,7 @@
     /* Allows proper centering */
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 300;
+    font-weight: bold;
     font-style: normal;
 }
 
@@ -45,7 +53,7 @@
 
 /* Change nav-link color on hover */
 .nav-link:hover {
-    color: rgb(68, 201, 6);
+    color: rgb(233, 164, 16);
     /* Changes the text color to red on hover */
     text-decoration: none;
     /* Removes any underline that may appear */
@@ -71,7 +79,8 @@
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid #ddd;
-    margin-right: 20px;
+    margin-right: 30px;
+    margin-top: 90px;
     /* Space between image and text */
 }
 
@@ -98,6 +107,60 @@
     text-decoration: underline;
 }
 
+.compact {
+    margin: 0;
+}
+
+.social-icons_cv_page{
+    position: absolute;
+    margin: 20px;
+}
+
+.social-icons_cv_page a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: #106092;
+    border-radius: 50%;
+    margin-right: 22px;
+    text-align: center;
+    line-height: 35px;
+    border: 1px solid #fff;
+    outline: 2px solid #f4f4f5;
+    transition: .3s;
+}
+.social-icons_cv_page a:hover {
+    transform: translateY(-5px);
+}
+.social-icons_cv_page a i {
+    color: #ffffff;
+}
+
+.social-icons {
+    position: absolute;
+    margin-top: 400px;
+    margin-right: 40px;
+}
+.social-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    /* background: #04010780; */
+    border-radius: 50%;
+    margin-right: 22px;
+    text-align: center;
+    line-height: 35px;
+    border: 1px solid #fff;
+    outline: 2px solid #383838;
+    transition: .3s;
+}
+.social-icons a:hover {
+    transform: translateY(-5px);
+}
+.social-icons a i {
+    color: #161616;
+}
+
 /* Media Query for Smaller Screens */
 @media (max-width: 768px) {
     .profile-container {
@@ -116,6 +179,7 @@
     }
 
     .profile-content {
+        padding-top: 40px;
         max-width: 100%;
         /* Ensure content takes full width */
         margin-left: 0;
@@ -123,10 +187,12 @@
         text-align: left;
         /* Center align text on smaller screens */
     }
-}
 
-.compact {
-    margin: 0;
+    .social-icons {
+        position: absolute;
+        margin: 0 0 20px 0;
+        margin-top: 210px;
+    }
 }
 
 /* CV */
@@ -167,6 +233,13 @@
     letter-spacing: 0.05em;
     color: #1E3B4D;
 }
+
+.company-icon {
+    width: 110px; /* Adjust width as needed */
+    height: 80px; /* Adjust height for rectangle shape */
+    object-fit: contain; /* Ensures the image scales correctly */
+}
+
 
 
 .job-dates {
